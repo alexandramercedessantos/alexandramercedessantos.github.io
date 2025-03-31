@@ -94,7 +94,7 @@
             width: auto;
         }
         
-        /* Main content styles */
+
         .main-content {
             flex: 1;
             display: flex;
@@ -139,6 +139,17 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            z-index: 99;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
         
         @media (max-width: 768px) {
             .header-content {
@@ -153,6 +164,13 @@
                 flex: 0 1 100%;
                 max-width: 400px;
             }
+            .mobile-nav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+		
         }
         
     </style>
@@ -169,6 +187,13 @@
             <button class="other-button">Contact Us ✉️</button>
         </div>
     </div>
+</div>
+
+<div class="mobile-nav">
+    <button class="important-button">Menu</button>
+    <button class="important-button">Order Online</button>
+    <img src="number.jpg" alt="Phone: 555-5555" style="height: 30px;">
+    <button class="other-button">Contact Us</button>
 </div>
 
 <div class="main-content">
