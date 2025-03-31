@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alexandra Mercedes-Santos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            background-color: #FFA3A5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #A3005A;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+        
+        .header p {
+            margin: 10px 0 0;
+        }
+        
+        .main {
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h2, h3{
+            color: #a3008d;
+        }
+        
+        
+        h4 {
+            color: #FF8587;
+        }
+        
+        a {
+            color: #A35200;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Responsive Redesign</h1>
+    <p>A website in progress.</p>
+</div>
+
+<div class="main">
+
+    <h3>Introduction</h3>
+    <p>This webpage is a presentation of my workflow in redesigning a website I found online. I started by looking into potential problems of the website. Then, I made a visual redesign in Figma. Finally, I created the redesign with html and css with responsiveness, so that it can be used on different .</p>
+
+    <h3>Part 1: Identifying A Usability Problem</h3>
+    <p>I found this website <a href="https://lattanziosandwiches.com"> lattanziosandwiches.com</a> that looked as if it would be a good specimen to analyze and redesign. I would measure the potential problems by five metrics: Efficiency, Learnability, Memorability, Conceptual Model, and Accessibility</p>
+    <h4>Efficiency</h4>
+    	<ul>
+          <li> In terms of efficiency, I don’t think the page layout is helpful for the average customer. When looking at a restaurant, the first thing one might look for is the food. To find it, you’d have to scroll down.</li>
+        </ul>
+    <h4>Learnability</h4>
+    	<ul>
+          <li>The buttons you need to find the information you want are hidden in a pop-up menu that is not intuitive to all users.</li>
+        </ul>
+    <h4>Memorability</h4>
+    	<ul>
+          <li> I think that memorability may be difficult to achieve due to how the website has its buttons organized.</li>
+        </ul>
+    <h4>Conceptual Model</h4>
+    	<ul>
+          <li>The colors can be used in a better way to help guide the user down the page and to what they need.</li>
+          <li>Right now with how the website is organized, their goals seem either unclear or mismatched.</li>
+        </ul>
+    <h4>Accessibility</h4>
+    	<ul>
+          <li>One big issue right off the bat is the lack of labels on all of the graphics. There are pictures of the food, but also there are graphics that contain important information like the name of the restaurant, the address and social media information.</li>
+          <li>There are some issues with the reflexive response. For example, the pop up menu doesn’t work on phones or vertical screens very well.</li>
+          <li>There is also an issue with some of the fonts, which can be difficult for the user to read.</li>
+        </ul>
+    <p>I also used WebAIM WAVE for a deeper analysis of the website. I do agree with most of what WebAIM WAVE has detected. I would add that there can be a consideration for the readability of certain fonts. For the most part, I appreciate that it pointed out the lack of aria labels of the website.</p>
+    
+    <h3>Part 2: Visual Redesign</h3>
+    <p> With these issues in mind, I knew I wanted to do several things: </p>
+    	<ol>
+          <li> I plan to keep the logo and name at the very top so that users can more easily learn and recognize the restaurant. This will make it easier for them to use the website.</li>
+          <li> I also will made sure to include the buttons close to the top so that the users don’t have to hunt through the website to find the menu.</li>
+          <li> The buttons will have icons along with titles, so that it is more easily accessible.</li>
+          <li> Every graphic and image will have an aria label for better accessibility.</li>
+          <li> I will keep the buttons at the top of the webpage to help return users to remember the site and to achieve better efficiency.</li>
+          <li> The colors will also work so that the information is more cohesive and intuitive.</li>
+        </ol>
+    
+    <p> I set these things as my goals and started with a visual design style guide that would keep my choices consistent within the website.</p>
+    
+    <img src="guide.jpg" alt="Visual design style guide">
+    
+    <p> Finally, I created three mockups of different sizes. One for a mobile phone, one for a tablet and one for a large computer.</p>
+    
+    <img src="mobile.jpg" alt="Mobile mockup">
+    <p> For the phone, I think flexbox would be ideal, since the website would be organized in a column. There would be minimal margins on the sides. The buttons may also need to be simplified or taken out.</p>
+    
+    <img src="tablet.jpg" alt="Tablet mockup">    
+    <p> For the tablet, the buttons would be placed outside of the header, and this row form can be achieved with flexbox. The buttons may need to be simplified to fit, so the icons may be cut leaving only the text. There are margins on the sides.</p>
+    
+    <img src="computer.jpg" alt="Large Computer Mockup">
+    <p> For the computer, I think flexbox would be an ideal way to organize the items and buttons on the header nad generally for a simple website like this one. The computer will need to have set margins for things to be aligned.</p>
+    
+    
+    
+    <h3>Part 3: Responsive Redesign</h3>
+    <p> After this work with the visual design elements, it was finally time to create the <a href="Actual Responsive Redesign Website\Lattanzio.html">actual website with responsive elements</a>. It can be found in this link: . This was a wonderful experience where I got to learn the workflow of redesigning a website.</p>
+    
+</div>
+
+</body>
+</html>

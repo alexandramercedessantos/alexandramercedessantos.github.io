@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS/Flexbox Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ledger">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Ledger", serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 80px; 
+            padding-bottom: 60px; 
+        }
+        
+        h3 {
+            font-family: "Koulen", sans-serif;
+            line-height: 1.6;
+            color: black;
+            font-size: 1.875em;
+            margin: 15px 0;
+        }
+        
+        p {
+            font-family: "Ledger", serif;
+            color: black;
+            font-size: 0.875em;
+            margin-bottom: 15px;
+        }
+        
+        .important-button {
+            font-family: "Ledger", serif;
+            line-height: 1.6;
+            border-radius: 12px;
+            color: black;
+            background-color: #ff9500;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        
+        .other-button {
+            font-family: "Ledger", serif;
+            line-height: 1.6;
+            color: black;
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #344398;
+            padding: 15px 0;
+            z-index: 100;
+        }
+        
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .header-logo {
+            height: 50px;
+            width: auto;
+        }
+        
+        .header-phone {
+            height: 30px;
+            width: auto;
+        }
+        
+        /* Main content styles */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .food-item {
+            flex: 0 1 calc(33.333% - 40px);
+            min-width: 250px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .images {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+       
+        footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #344398;
+            padding: 15px 0;
+            z-index: 100;
+        }
+        
+        .bottom {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                display: none;
+            }
+            
+            .top {
+                justify-content: center; 
+            }
+            
+            .food-item {
+                flex: 0 1 100%;
+                max-width: 400px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="top">
+        <img src="Logo.png" alt="Logo" class="header-logo">
+        <div class="header-content">
+            <button class="important-button">Menu 🍴</button>
+            <button class="important-button">Order Online 🛒</button>
+            <img src="number.png" alt="Phone Number: 555-5555" class="header-phone">
+            <button class="other-button">Contact Us ✉️</button>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="food-item">
+        <img src="fries.jpg" alt="fries" class="images">
+        <h3>Some Great Fries</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="food-item">
+        <img src="sandwich.jpg" alt="sandwich" class="images">
+        <h3>The best sandwich</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="food-item">
+        <img src="chicken.jpg" alt="chicken" class="images">
+        <h3>Chicken Chicken</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="bottom">
+        <img src="Logo.png" alt="Logo" class="header-logo">         
+    </div>
+</footer>
+
+</body>
+</html>
