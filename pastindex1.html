@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Alexandra Mercedes-Santos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+<body >
+
+body {
+  
+  margin: 0;
+}
+
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #5f9731;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body style="
+background-color: #daeead;">
+
+<div class="header">
+  <h1>Alex's Website</h1>
+  <p>A website in progress.</p>
+</div>
+
+  <div class="main">	
+	<h2><a href="Responsive Redesign Project\ResponsiveRedesign.html"> Responsive Redesign </a></h2>
+	<h2><a href="Personas and Storyboarding Project\PersonasCS1300.html">Personas and Storyboarding</a></h2>
+    	<h2><a href="Accessible Components Project\Accessible Components.html">Accessible Components </a></h2>
+
+    <h3>Introduction</h3>
+    <p> This webpage is an exploration of the User Interface and Design of Search Bars. The goal is to compare different search bars, reflect on them and to improve the design of them to make them easier to use by focusing on their learnability, memorability, efficiency and accessibility.</p>
+    <h3>Part 1: Input</h3>
+    I focused on the search bars found in Google Docs, Canva and ABC.com
+    <h4>Screenshots</h4>
+    <img src="Accessible Components Project\GoogleScreenshots.jpg" alt="Google screenshots" style="height:200px;">
+    <img src="Accessible Components Project\CanvaScreenshots.jpg" alt="Canva screenshots" style="height:200px;">
+    <img src="Accessible Components Project\ABC Screenshots.jpg" alt="ABC.com screenshots" style="height:200px;">
+    <h4>Table</h4>
+	<table style="width:100%">
+  <tr>
+    <th>Input</th>
+    <th>Google Docs</th>
+    <th>Canva</th>
+    <th>ABC.com</th>
+  </tr>
+  <tr>
+    <td>Mouse/Touchpad</td>
+    <td>
+    	<ul>
+          <li>Can click to open search bar</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Can click to open search bar</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Can click to open search bar</li>
+		</ul>
+	</td>
+  </tr>
+  <tr>
+    <td>Keyboard</td>
+    <td>
+    	<ul>
+          <li>Tab + Enter opens the search bar</li>
+          <li>Alt + / opens the search bar</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Tab opens the search bar</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Tab + Enter opens the search bar</li>
+		</ul>
+	</td>
+  </tr>
+  <tr>
+    <td>Touch (if applicable)</td>
+    <td>
+    	<ul>
+          <li>Not applicable</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Single tap opens seach bar</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Single tap opens seach bar</li>
+		</ul>
+	</td>
+  </tr>
+</table>
+    <h4>Reflection</h4>
+	<p> The search bar for ABC was probably easiest to learn with an icon and the word search at the top of the page. Canva was probably the most difficult to learn because of its difficulty to navigate. You had to know that you had to click on a button so that the sidebar would show up, you then had to click on an element and then find the search bar. Google Docs was the only component that had an easily found keyboard shortcut, so it seems highest in efficiency. I would tie Google Docs and ABC for memorability, because the icon is easy enough to find both times. Canva requires some clicking around and suffers in memorability.</p>
+    
+    <h3>Part 2: Output</h3>
+    <h4>Table</h4>
+	<table style="width:100%">
+  <tr>
+    <th>Output</th>
+    <th>Google Docs</th>
+    <th>Canva</th>
+    <th>ABC.com</th>
+  </tr>
+  <tr>
+    <td>Visual</td>
+    <td>
+    	<ul>
+          <li>Icon is colored in a slightly darker gray box</li>
+          <li>There is a popup that says "Search the menus (Alt + /)</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>The border around the search element is darkened when hovered</li>
+          <li>This border darkens a bit more when clicked or with tab press</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>When key tab is pressed a white border lines the element</li>
+          <li>With hover the search text darkens</li>
+		</ul>
+	</td>
+  </tr>
+  <tr>
+    <td>Screen Reader</td>
+    <td>
+    	<ul>
+          <li>"Search the menu alt plus slash toolbar"</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>"Elements Tab Panel Search Elements Combo Edit Suggestions will appear as you type into the field"</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>"Search landmark search for a show edit"</li>
+		</ul>
+	</td>
+  </tr>
+  <tr>
+    <td>Focus Order</td>
+    <td>
+    	<ul>
+          <li>Part of the header</li>
+          <li>Left side</li>
+          <li>20th things that will be read by the screenreader</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Part of the pop-up sidebar</li>
+          <li>Left side</li>
+          <li>Side bar needs interaction to see the search bar</li>
+		</ul>
+	</td>
+    <td>
+    	<ul>
+          <li>Part of the header</li>
+          <li>Right side</li>
+          <li>5th things that will be read by the screenreader</li>
+		</ul>
+	</td>
+  </tr>
+</table>
+    
+    <h3>Part 3: State Models and Component Redesign</h3>
+    <h4>Initial State Models for Canva Search Bar</h4>
+	<img src="Accessible Components Project\InitialMouseUser.jpg" alt="State Model for Current Mouse User" style="height:200px;">
+    <img src="Accessible Components Project\InitialKeyboardUser.jpg" alt="State Model for Current Keyboard User" style="height:200px;">
+
+
+    <h4>Revised State Models</h4>
+	<img src="Accessible Components Project\RevisedMouseUser.jpg" alt="Revised State Model for Mouse User" style="height:200px;">
+    <img src="Accessible Components Project\RevisedKeyboardUser.jpg" alt="Revised State Model for Keyboard User" style="height:200px;">
+
+    <h4>Revisions</h4>
+    <img src="Accessible Components Project\first.jpeg" alt="First revised search bar" style="height:400px;">
+<img src="Accessible Components Project\second.jpeg" alt="Second revised search bar" style="height:400px;">
+    <h3>Part 4: Reflection</h3>
+    <ul>
+      <li>I think in terms of usability the keyboard wasn't too bad, because people can use tab to access certain buttons.</li>
+      <li>I think the changes I made solve a mismatch for screen reader users.</li>
+      <li>One inaccessibility was the lack of keyboard shortcuts, especially in an application like Canva that is used professionally and often. It can make the user slower and makes the application more inaccessible for users who may have some visability issues.</li>
+      <li>I think a person with visual impairments would like the bold border that ABC uses, because it makes the elements easier to see.</li>
+      <li>I think that mouse users are most heavily prioritized. Everything on the applications I used is accessible by mouse, less so for keyboard users and even less so for screen reader users. I think there needs to be a balance, so that the user experience can be improved.</li>
+    </ul>
+
+    
+  </div>
+</div>
+
+
+
+</body>
+</html>
